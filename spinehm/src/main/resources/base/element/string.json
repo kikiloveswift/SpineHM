@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "SpinehmAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "SpinehmAbility_label",
+      "value": "label"
+    }
+  ]
+}

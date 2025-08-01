@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/liqiang/.ohos/config/default_SpineHM_X9NG8EvbgBIqMKACdYaQG7JTA5h0hdpDzYYgC1f6BsY=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B904D423607C91DD6510F6AB76810A203C4A68A708A5E7143B267F01F17CB1E74EB9BBA98EAD91D",
+          "profile": "/Users/liqiang/.ohos/config/default_SpineHM_X9NG8EvbgBIqMKACdYaQG7JTA5h0hdpDzYYgC1f6BsY=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/liqiang/.ohos/config/default_SpineHM_X9NG8EvbgBIqMKACdYaQG7JTA5h0hdpDzYYgC1f6BsY=.p12",
+          "storePassword": "0000001BBA9A0C73743701F061FFCFB656559CF2872C7A8595DFF787ACDC2BF60EC575C9967707B34E2880"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.0(18)",
+        "compatibleSdkVersion": "5.0.3(15)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "spinehm",
+      "srcPath": "./spinehm",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

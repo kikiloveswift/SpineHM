@@ -1,0 +1,50 @@
+{
+  "module": {
+    "name": "spinehm",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "SpinehmAbility",
+    "deviceTypes": [
+      "phone"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "SpinehmAbility",
+        "srcEntry": "./ets/spinehmability/SpinehmAbility.ets",
+        "description": "$string:SpinehmAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:SpinehmAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "SpinehmBackupAbility",
+        "srcEntry": "./ets/spinehmbackupability/SpinehmBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      }
+    ]
+  }
+}

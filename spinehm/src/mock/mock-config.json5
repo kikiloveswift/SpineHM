@@ -1,0 +1,5 @@
+{
+  "libspinehm.so": {
+    "source": "src/mock/Libspinehm.mock.ets"
+  }
+}
